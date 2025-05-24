@@ -1,0 +1,476 @@
+body.naruto{
+  	margin: 0;
+  	height: 100vh;
+  	display: flex;              /* Required for Flexbox */
+  	justify-content: center;    /* Horizontally center */
+  	align-items: center;        /* Vertically center */
+  	background: linear-gradient(to right, #f39c12, #e74c3c);
+  	font-family: 'Cardo', serif;
+}
+
+body.sasuke{
+  	margin: 0;
+  	height: 100vh;
+  	display: flex;              /* Required for Flexbox */
+  	justify-content: center;    /* Horizontally center */
+  	align-items: center;        /* Vertically center */
+    background: linear-gradient(to right, #1a152d, #2b2547, #1b1533);
+	color: whitesmoke;
+  	font-family: 'Cardo', serif;
+}
+
+body.kakashi {
+    margin: 0;
+    height: 100vh;
+    display: flex;               /* Required for Flexbox */
+    justify-content: center;     /* Horizontally center */
+    align-items: center;         /* Vertically center */
+  	background: linear-gradient(to right, #5b6670, #7a8791, #4a5760);
+  	color: #222;
+    font-family: 'Cardo', serif;
+}
+
+body.sakura {
+    margin: 0;
+    height: 100vh;
+    display: flex;               /* Required for Flexbox */
+    justify-content: center;     /* Horizontally center */
+    align-items: center;         /* Vertically center */
+    background: linear-gradient(to right, #f8a5c2, #f7d1cd, #f4a1b8);
+    color: #4b2e3b;              /* A dark pinkish color for text */
+    font-family: 'Cardo', serif;
+}
+
+
+body.naruto .card {
+  	height: 360px;
+  	width: 550px;
+  	background-color: #ee922d;
+  	border-radius: 15px;
+  	border: 3px solid black;
+  	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+
+  	background-image: repeating-linear-gradient(
+    	45deg,
+    	rgba(255, 255, 255, 0.05),
+    	rgba(255, 255, 255, 0.05) 10px,
+    	transparent 10px,
+    	transparent 20px
+  	);
+}
+
+body.sasuke .card {
+    height: 360px;
+    width: 550px;
+  	background-color: #2d2546;
+  	border: 3px solid #3f3a5a;  
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
+
+    background-image: repeating-linear-gradient(
+        45deg,
+        rgba(255, 255, 255, 0.05),
+        rgba(255, 255, 255, 0.05) 10px,
+        transparent 10px,
+        transparent 20px
+    );
+}
+
+body.kakashi .card {
+    height: 360px;
+    width: 550px;
+  	background-color: #7a8791;
+  	border: 3px solid #5e6973;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+
+    background-image: repeating-linear-gradient(
+        45deg,
+        rgba(255, 255, 255, 0.07),
+        rgba(255, 255, 255, 0.07) 12px,
+        transparent 12px,
+        transparent 24px
+    );
+}
+
+body.sakura .card {
+	color:#1f1930;
+    height: 360px;
+    width: 550px;
+    background-color: #d38cae;  /* muted rosy pink */
+    border: 3px solid #e6b7c4;  /* lighter pink border */
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(179, 81, 113, 0.6); /* subtle pinkish shadow */
+
+    background-image: repeating-linear-gradient(
+        45deg,
+        rgba(255, 255, 255, 0.12),
+        rgba(255, 255, 255, 0.12) 12px,
+        transparent 12px,
+        transparent 24px
+    );
+}
+
+
+body.naruto .header{
+	position: relative;
+	margin: 0;
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
+	background-color: #e77012;
+	height: 70px;
+	display: flex;  /* Enable Flexbox */
+	padding: 0 25px;
+  	align-items: center;        /* Center vertically */
+	border-bottom: 3px solid #000000;   
+}
+
+body.sasuke .header {
+    position: relative;
+    margin: 0;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    height: 70px;
+    display: flex;  /* Enable Flexbox */
+    padding: 0 25px;
+    align-items: center;        /* Center vertically */
+	background-color: #1b1533;
+  	border-bottom: 3px solid #0e0b1a;
+}
+
+body.kakashi .header {
+    position: relative;
+    margin: 0;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    height: 70px;
+    display: flex;              /* Enable Flexbox */
+    padding: 0 25px;
+    align-items: center;        /* Center vertically */
+  	background-color: #4a5760;
+  	border-bottom: 3px solid #394550;
+}
+
+body.sakura .header {
+    position: relative;
+    margin: 0;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    background-color: #c17892;  /* muted rose pink */
+    height: 70px;
+    display: flex;              /* Enable Flexbox */
+    padding: 0 25px;
+    align-items: center;        /* Center vertically */
+    border-bottom: 3px solid #a05a70;  /* slightly darker pink for subtle contrast */
+}
+
+
+
+.header .logo {
+  	max-width: 45px;
+}
+
+.header h1{
+  	position: absolute;
+  	left: 50%;
+  	transform: translateX(-50%);
+  	color: whitesmoke;
+  	margin: 0;         
+}
+
+.content {
+  	display: flex;              /* Arrange children side by side */
+  	padding: 20px;              /* Optional spacing */
+  	gap: 20px;                  /* Space between image and text */
+}
+
+.content .photo{
+	height: 200px;
+	width: 150px;
+	border: 3px solid black;
+	border-radius: 10px;
+	transition: transform 0.3s ease;
+  	cursor: pointer;
+}
+
+.content .photo:hover {
+  	transform: scale(1.05);
+}
+
+.info {
+  	display: flex;
+  	flex-direction: column;  /* Stack text vertically */
+  	justify-content: center; /* Optional: center vertically relative to image */
+	margin-left: 15px;
+	font-weight: 700;
+  	letter-spacing: 1.2px;
+}
+
+.info h2 {
+  	margin: 0;
+  	font-size: 24px;
+
+}
+
+.info p {
+  	margin: 3px 0 0;
+  	font-size: 20px;
+  	font-style: italic;
+  	opacity: 0.85;
+}
+
+body.naruto .info button {
+    border-radius: 20px;
+    margin: 10px;
+    padding: 5px 15px;
+    font-style: italic;
+    background-color: #e77012;
+    color: white;
+    font-size: large;
+    transition: transform 0.5s ease, background-color 0.3s, color 0.3s;
+    border: 2px solid black;
+}
+
+body.naruto .info button:hover {
+    background-color: white;
+    color: #e74c3c;
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s, color 0.3s;
+}
+
+
+body.sasuke .info button {
+    border-radius: 20px;
+	border: 2px solid black;
+    margin: 10px;
+    padding: 5px 15px;
+    font-style: italic;
+    background-color: #1b1533;  /* dark purplish-gray */
+    color: whitesmoke;
+    font-size: large;
+    transition: transform 0.5s ease, background-color 0.3s, color 0.3s;
+}
+
+body.sasuke .info button:hover {
+    background-color: whitesmoke;
+    color: #1b1533;
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s, color 0.3s;
+}
+
+body.kakashi .info button {
+    border-radius: 20px;
+    margin: 10px;
+    padding: 5px 15px;
+    font-style: italic;
+    background-color: #4a5760;
+    color: #e1e4e8;
+    font-size: large;
+    transition: transform 0.5s ease, background-color 0.3s, color 0.3s;
+    border: none;
+}
+
+body.kakashi .info button:hover {
+    background-color: #a3b1c2;
+    color: #4a5760;
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s, color 0.3s;
+}
+
+body.sakura .info button {
+    border-radius: 20px;
+    margin: 10px;
+    padding: 5px 15px;
+    font-style: italic;
+    background-color: #c17892;   /* soft pink */
+    color: white;
+    font-size: large;
+    transition: transform 0.5s ease, background-color 0.3s, color 0.3s;
+    border: 2px solid #9e3d6f;  /* deeper pink border */
+}
+
+body.sakura .info button:hover {
+    background-color: white;
+    color: #c17892;              /* revert to original pink on hover text */
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s, color 0.3s;
+}
+
+.flip-card {
+  perspective: 1000px;
+  transform: translateY(-30px);
+}
+
+.flip-card-inner {
+  width: 550px;
+  height: 330px;
+  position: relative;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card.flipped .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+.kunai-left{
+	height: 50px;
+	margin-top: 420px;
+	margin-left: 10px;
+	margin-right: 120px;
+
+}
+
+.kunai-right{
+	height: 50px;
+}
+
+.alert-message {
+  position: fixed;
+  top: 20px;            
+  left: 50%;             
+  transform: translateX(-50%); 
+  width: 500px;       
+  padding: 15px 25px;   
+  font-size: 25px;
+  text-align: center;
+  border-radius: 12px;   
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  opacity: 1;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  z-index: 9999;
+}
+
+
+@media (max-width: 768px) {
+  
+  body.naruto .card,
+  body.sasuke .card,
+  body.kakashi .card,
+  body.sakura .card {
+    width: 90vw;         /* Use 90% of viewport width */
+    height: auto;        /* Let height adjust to content */
+    max-width: 400px;    /* Optional max width for bigger tablets */
+  }
+
+  .flip-card-inner {
+    width: 90vw;
+    max-width: 400px;
+    height: auto;
+  }
+
+  .header h1 {
+    font-size: 1.5rem;  /* Smaller title font */
+  }
+
+  .content {
+    flex-direction: column;   /* Stack image and info vertically */
+    align-items: center;
+    padding: 10px;
+    gap: 15px;
+  }
+
+  .content .photo {
+    width: 120px;
+    height: 160px;
+    border-width: 2px;
+  }
+
+  .info {
+    margin-left: 0;
+    text-align: center;
+    font-weight: 600;
+  }
+
+  .info h2 {
+    font-size: 1.4rem;
+  }
+
+  .info p {
+    font-size: 1.1rem;
+  }
+
+  body.naruto .info button,
+  body.sasuke .info button,
+  body.kakashi .info button,
+  body.sakura .info button {
+    font-size: 1rem;
+    padding: 7px 12px;
+    margin: 8px 0;
+  }
+
+  .kunai-left,
+  .kunai-right {
+    height: 35px;
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-right: 60px;
+  }
+
+  .alert-message {
+    width: 90vw;
+    font-size: 1.3rem;
+    padding: 10px 15px;
+  }
+}
+
+/* Additional smaller screen adjustment for phones <= 480px */
+@media (max-width: 480px) {
+  .header h1 {
+    font-size: 1.2rem;
+  }
+
+  .content .photo {
+    width: 100px;
+    height: 140px;
+  }
+
+  .info h2 {
+    font-size: 1.2rem;
+  }
+
+  .info p {
+    font-size: 1rem;
+  }
+
+.flip-card {
+  perspective: 1000px;
+  transform: translateY(60px);
+}
+
+  body.naruto .info button,
+  body.sasuke .info button,
+  body.kakashi .info button,
+  body.sakura .info button {
+    font-size: 0.9rem;
+    padding: 6px 10px;
+  }
+
+.kunai-left{
+	height: 35px;
+	margin-top: 530px;
+	margin-right: 15px;
+
+}
+
+.kunai-right{
+	height: 35px;
+	margin-left: 10.59px;
+}
+}
