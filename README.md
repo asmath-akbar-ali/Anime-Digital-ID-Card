@@ -1,4 +1,4 @@
-# Anime Digital ID Cards 🌀
+# Anime Digital ID Card 🌀
 
 ![Project Banner](images/Screenshot.png)  
 
@@ -12,10 +12,8 @@ Interactive flip cards featuring Naruto characters with unique designs, stats, a
 - [Characters](#characters)
 - [Tech Stack](#tech-stack)
 - [Project Structure](#project-structure)
-- [Customization](#customization)
-- [Contributing](#contributing)
 
-## Features ✨
+## Features
 
 - **4 Complete Character Cards**:
   - Naruto Uzumaki
@@ -32,13 +30,13 @@ Interactive flip cards featuring Naruto characters with unique designs, stats, a
   - Unique color schemes for each character
   - Smooth CSS animations and transitions
 
-## Demo 🎮
+## Demo
 
 Live Demo: 
 
 
 
-## Installation ⚙️
+## Installation
 
 1. Clone the repository:
    ```bash
@@ -62,7 +60,7 @@ Live Demo:
 - **Sakura Haruno** — The strong and compassionate ninja.
 - **Kakashi Hatake** — The wise and mysterious sensei.
 
-## Tech Stack 🛠️
+## Tech Stack
 
 - **HTML5**
 - **CSS3** (Flexbox, Transitions, Animations)
