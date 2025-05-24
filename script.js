@@ -13,32 +13,30 @@ function showQuoteByBodyClass() {
   const bodyClass = document.body.className;
   const quoteText = quotesByCharacter[bodyClass] || "No quote available.";
 
-  // Create alert container div
   const alertDiv = document.createElement('div');
   alertDiv.textContent = quoteText;
   alertDiv.classList.add('alert-message');
 
-  // Default styles: transparent background, black border and text
   alertDiv.style.background = 'transparent';
   alertDiv.style.border = '3px solid black';
   alertDiv.style.color = 'black';
 
-  // If sasuke, override border and text color to white
   if (bodyClass === 'sasuke') {
     alertDiv.style.border = '3px solid black';
     alertDiv.style.color = 'white';
   }
 
-  // Add alert to body
   document.body.appendChild(alertDiv);
 
-  // Remove alert after 5 seconds with fade out effect
+  setTimeout(() => {
+    alertDiv.classList.add('show');
+  }, 50);
+
   setTimeout(() => {
     alertDiv.style.opacity = '0';
     setTimeout(() => alertDiv.remove(), 500);
   }, 5000);
 
-  // Update quote element if present
   const quoteElement = document.getElementById("quote");
   if (quoteElement) {
     quoteElement.textContent = quoteText;
