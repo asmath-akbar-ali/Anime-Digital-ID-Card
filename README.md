@@ -31,10 +31,6 @@ Interactive flip cards featuring Naruto characters with unique designs, stats, a
   - Unique color schemes for each character
   - Smooth CSS animations and transitions
 
-## Demo
-
-Live Demo: 
-
 
 
 ## Installation
